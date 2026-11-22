@@ -24,7 +24,8 @@ A React e-commerce application inspired by an online storefront, with Firebase i
 
 ### Prerequisites
 
-- Node.js and npm
+- Node.js 22 and npm
+- Firebase CLI
 - A Firebase project configured for your own development environment
 
 ```bash
@@ -54,7 +55,7 @@ firebase functions:secrets:set STRIPE_SECRET_KEY
 firebase deploy --only functions
 ```
 
-Never commit Stripe secret keys, Firebase service-account credentials, or other private credentials. The payment function is configured to read its Stripe key from the bound runtime secret.
+Never commit Stripe secret keys, Firebase service-account credentials, or other private credentials. The payment function is configured to read its Stripe key from the bound runtime secret. The Cloud Functions runtime is configured for Node.js 22.
 
 ## Project notes
 
